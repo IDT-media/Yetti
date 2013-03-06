@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Custom styles for demo
+   ========================================================================== */
+body.demo {
+	background: url(../images/light_wool.png) repeat;
+}
+
+.col {
+	background: #f3f3f3;
+	background: rgba(243, 243, 243, .95);
+	margin-bottom: 1em;
+	padding: 1em 0;
+	text-align: center;
+}
