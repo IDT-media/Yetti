@@ -5,6 +5,7 @@
 @import url(normalize.css);
 @import url(yetti-helper.css);
 @import url(yetti-grid.css);
+@import url(yetti-tables.css);
 
 /* Third party scripts like jquery plugins */
 @import url(colorbox.css);

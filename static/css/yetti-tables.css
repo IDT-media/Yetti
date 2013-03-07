@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Table styles
+   ========================================================================== */
+
+/* Default */
+
+table {
+	width: 100%;
+	margin: 0 0 1em 0;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
+  	table-layout: fixed;
+  	word-wrap: break-word;
+  	-ms-word-wrap: break-word;
+  	*white-space: normal;	
+}
+
+caption, th, td {
+  	text-align: left;
+  	vertical-align: top;
+  	font-weight: normal;
+  	padding: .57222em;
+}
+
+table caption {
+	font-weight: bold;
+}
+
+thead th, thead td {
+  	font-weight: bold;
+  	vertical-align: bottom;
+}
+
+/* Table lined */
+
+table.stroked-table th, table.stroked-table td {
+	border-bottom: 1px solid #ddd;
+}
+
+/* Zebra table */
+
+table.zebra-table tbody tr:nth-child(odd) td, table.zebra-table tbody tr.nth-child-odd td {
+	background: #f8f8f8;
+}
+
+/*
+ * Stupid IE lt 9 would require you to write something like this below
+ * repeating as many times as table might be long
+ * you could end up with tr:first-child + tr + tr + tr + tr + tr + tr + tr + tr ................ td
+ * So better use JS and .nth-child-odd class
+ */
+
+/*
+table.zebra-table tbody > tr:first-child td,
+table.zebra-table tbody > tr:first-child + tr + tr td {
+	background: #f8f8f8;
+}
+*/
+
+table.zebra-table tbody tr:hover td {
+	background: #f2f2f2;
+}
+
+/* Bordered table */
+
+table.bordered-table td, table.bordered-table th {
+  border: 1px solid #ddd;
+}
