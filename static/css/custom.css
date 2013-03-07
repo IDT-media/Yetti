@@ -12,3 +12,7 @@ body.demo {
 	text-align: center;
 	margin-top: 1em;
 }
+
+.grey {
+	color: #bbb;
+}

@@ -10,21 +10,185 @@
 @import url(colorbox.css);
 
 /* ==========================================================================
-   Generic Styles (HTML elements)
+   Generic Styles (HTML elements & Typography)
    ========================================================================== */
+  
+/* --- DEFAULT SETTINGS --- */  
+  
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
+}
 
-.bold { font-weight: bold; }
-.no-padding { padding: 0; }
-.no-margin { margin: 0; }
-.clickable, .clickable-blank { cursor: pointer; }
+html {
+	height: 100%; 
+	font-size: 100%; 
+	overflow-y: scroll; 
+	-webkit-text-size-adjust: 100%;
+} 
+ 
+body {
+	font: 100%/1.5 sans-serif;
+	font-size: .875em; /* 14px */
+	-webkit-font-smoothing:antialiased; 
+}
 
 img, object, embed {
-max-width: 100%;
+	max-width: 100%;
 }
 
 img {
-height: auto;
+	height: auto;
 }
+
+strong {
+	font-weight: 700; 
+}
+
+hr {
+	clear:both;
+	border-width: 0;
+	border-color: #ddd;
+	border-style: solid;
+	border-top-width: 1px;
+	margin: .83em 0;
+	min-height: 0;
+	height: 1px;
+}
+
+hr.dotted {
+	border-style: dotted;
+}
+
+hr.dashed {
+	border-style: dashed;
+}
+
+/* --- TYPOGRAPHY --- */ 
+
+h1, h2, h3, h4, h5, h6 {
+	margin: .4em 0;
+}
+
+h1 {
+	font-size: 4.285714em; /* 60px */
+}
+h2 {
+	font-size: 3.428571em; /* 48px */
+}
+h3 {
+	font-size: 2.571428em; /* 36px */
+}  
+h4 {
+	font-size: 1.714285em; /* 24px */
+}
+h5 {
+	font-size: 1.5em; /* 21px */
+}
+h6 {
+	font-size: 1.285714em; /* 18px */
+}
+
+.subheading {
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
+  margin: .1em 0;
+}
+
+p, ul, blockquote, pre, td, th, label {
+	font-size: 1em; /* 14px */
+	line-height: 1.5;
+}
+
+/* --- COMMON STYLES --- */  
+
+.bold { 
+	font-weight: 700; 
+}
+
+.extra-bold {
+	font-weight: 900;
+}
+
+.clickable, .clickable-blank { 
+	cursor: pointer; 
+}
+
+/* Reset paddings */
+
+.no-padding { 
+	padding: 0; 
+}
+
+.no-padding-top {
+	padding-top: 0;
+}
+
+.no-padding-bottom {
+	padding-bottom: 0;
+}
+
+/* Reset margins */
+
+.no-margin { 
+	margin: 0; 
+}
+
+.no-margin-top {
+	margin-top: 0;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+/* Text alignments */
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+/* Floats */
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
   
-/* TO DO */
+/* TO DO 
+	- Tables
+	- Forms
+	- Buttons
+	- Code 
+	- Lists
+	- Blockquotes
+	- Definition lists...
+ */
 
