@@ -67,3 +67,9 @@ table.zebra-table tbody tr:hover td {
 table.bordered-table td, table.bordered-table th {
   border: 1px solid #ddd;
 }
+
+/* Narrow table */
+
+table.narrow-table caption, table.narrow-table th, table.narrow-table td {
+  	padding: .2861em;
+}
