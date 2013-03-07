@@ -20,7 +20,6 @@
 	max-width: 1140px;
 	margin: 0 auto;
 	position: relative;
-
 }
 
 .row:before, .row:after {
@@ -81,7 +80,7 @@
 		width: 100%;
 		margin-left: 0;
 	}	
-	.row [class^="-col"]:first-child, .row .col:first-child, .first {
+	.row [class*="-col"]:first-child, .row [class*="-col"].first {
 		margin-left: 0;
 	}
 
@@ -126,8 +125,14 @@
 
 
 	/* ==========================================================================
-   	   Push Space
+   	   Push & Pull Space
    	   ========================================================================== */
+   	  
+	.row .push-one, .row .push-two, .row .push-three, .row .push-four, .row .push-five, .row .push-six, .row .push-seven, .row .push-eight, .row .push-nine, .row .push-ten, .row .push-eleven,
+	.row .pull-one, .row .pull-two, .row .pull-three, .row .pull-four, .row .pull-five, .row .pull-six, .row .pull-seven, .row .pull-eight, .row .pull-nine, .row .pull-ten, .row .pull-eleven {
+		position: relative;
+		margin-left: 0;
+	}  
    	  
 	.row .push-one {
 		left: 8.65%;
@@ -163,10 +168,6 @@
 		left: 95.15%;
 	}
 
-
-	/* ==========================================================================
-   	   Pull Space
-   	   ========================================================================== */
    	  
 	.row .pull-one {
 		right: 4.85%;
