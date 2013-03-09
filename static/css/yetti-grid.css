@@ -5,11 +5,6 @@
    Extended by Goran Ilic http://www.ich-mach-das.at																
    ========================================================================== */
 
-.full {
-	width: 100%;
-	display: block;
-}
-
 .container {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -31,13 +26,58 @@
 	clear: both;
 }
 
+.full {
+	width: 100%;
+	display: block;
+}
+
+.half, .third, .two-third, .quarter, .three-quarter, .fifth, .two-fifth, .three-fifth, .four-fifth {
+	float: left;
+}
+
+.half {
+	width: 50%;
+}
+
+.third {
+	width: 33.33%; 
+}
+
+.two-third {
+	width: 66.66%;
+}
+
+.quarter {
+	width: 25%;
+}
+
+.three-quarter {
+	width: 75%;
+}
+
+.fifth {
+	width: 20%;
+}
+
+.two-fifth {
+	width: 40%;
+}
+
+.three-fifth {
+	width: 60%;
+}
+
+.four-fifth {
+	width: 80%
+}
+
 @media only screen and (min-width: 768px) {
 	
 	/* ==========================================================================
    	   Base 12 Column Grid
    	   ========================================================================== */
   
-	.col, .one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .tenc-ol, .eleven-col {
+	.col, .one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .ten-col, .eleven-col {
 		margin-left: 3.8%;
 		float: left;
 		min-height: 1px;
