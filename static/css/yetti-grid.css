@@ -17,12 +17,12 @@
 	position: relative;
 }
 
-.row:before, .row:after {
+.row:before, .row:after, .form-row:before, .form-row:after {
 	content: " ";
 	display: table;
 }
 
-.row:after {
+.row:after, .form-row:after {
 	clear: both;
 }
 

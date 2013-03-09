@@ -6,6 +6,7 @@
 @import url(yetti-helper.css);
 @import url(yetti-grid.css);
 @import url(yetti-tables.css);
+@import url(yetti-forms.css);
 @import url(elusive-webfont.css);
 
 /* Third party scripts like jquery plugins */
@@ -92,7 +93,7 @@ form, fieldset, a img {
 }
 
 /* Reset default spacing */
-form, fieldset {
+form {
 	margin: 0;
 	padding: 0;
 }
