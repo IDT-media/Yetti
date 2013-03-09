@@ -60,7 +60,7 @@ input[type="number"], input[type="time"], input[type="week"] {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	-webkit-transition: border 0.200ms ease-in;
+	-webkit-transition: border 200ms ease-in;
 	-moz-transition: border 200ms ease-in;
 	-ms-transition: border 200ms ease-in;
 	-o-transition: border 200ms ease-in;
