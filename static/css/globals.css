@@ -6,6 +6,7 @@
 @import url(yetti-helper.css);
 @import url(yetti-grid.css);
 @import url(yetti-tables.css);
+@import url(elusive-webfont.css);
 
 /* Third party scripts like jquery plugins */
 @import url(colorbox.css);
@@ -23,7 +24,7 @@
 }
 
 html {
-	height: 100%; 
+	min-height: 100%; 
 	font-size: 100%; 
 	overflow-y: scroll; 
 	-webkit-text-size-adjust: 100%;
@@ -32,6 +33,7 @@ html {
 body {
 	font: 100%/1.5 sans-serif;
 	font-size: .875em; /* 14px */
+	color: #333;
 	-webkit-font-smoothing:antialiased; 
 }
 
@@ -51,8 +53,7 @@ strong {
 	font-weight: 700; 
 }
 
-abbr[title],
-dfn[title] {
+abbr[title], dfn[title] {
   border-bottom: 1px dotted #ddd;
   cursor: help;
 }
@@ -86,15 +87,12 @@ ul, ol {
 
 /* Reset default borders */
 
-form,
-fieldset,
-a img {
+form, fieldset, a img {
 	border: 0;
 }
 
 /* Reset default spacing */
-form,
-fieldset {
+form, fieldset {
 	margin: 0;
 	padding: 0;
 }
@@ -107,8 +105,7 @@ fieldset {
 
 /* Reset list style */
 
-.no-list,
-.no-list ul {
+.no-list, .no-list ul {
 	list-style: none
 }
 
@@ -179,6 +176,7 @@ fieldset {
 }
 
 .centered {
+	float: none;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -208,18 +206,23 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 4.285714em; /* 60px */
 }
+
 h2 {
 	font-size: 3.428571em; /* 48px */
 }
+
 h3 {
 	font-size: 2.571428em; /* 36px */
-}  
+} 
+ 
 h4 {
 	font-size: 1.714285em; /* 24px */
 }
+
 h5 {
 	font-size: 1.5em; /* 21px */
 }
+
 h6 {
 	font-size: 1.285714em; /* 18px */
 }
@@ -255,8 +258,7 @@ dl.no-margins dd {
 
 /* Blockquote & Cite */
 
-blockquote,
-q {
+blockquote, q {
 	font-size: 1.428571em; /* 20px */
   	padding: 1em 2.142857em;
   	margin: 1em 0;
@@ -348,11 +350,10 @@ mark {
 /* Extras */
 
 .tiny {
-	0.785714em; /* 11px */
+	font-size: 0.785714em; /* 11px */
 }
 
-small,
-.small {
+small, .small {
 	font-size: 0.857142em; /* 12px */
 }
 
@@ -383,12 +384,8 @@ small,
 
   
 /* TO DO 
-	- Tables
 	- Forms
 	- Buttons
-	- Code 
-	- Lists
-	- Blockquotes
-	- Definition lists...
+
  */
 
