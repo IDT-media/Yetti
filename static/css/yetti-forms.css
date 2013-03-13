@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+  
+fieldset {
+	margin: 1.5em 0;
+	padding: .5em 0;
+}
+
+legend {
+	font-size: 1.285714em; /* 18px */
+	font-weight: bold;
+	display: block;
+	border: none;
+	*margin-left: -.75em;
+}
+
+.form-row {
+	margin-bottom: .5em;
+}
+
+label {
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	margin-right: 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield; 
+	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0; 
+	padding: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], 
+input[type="search"], input[type="tel"], input[type="file"], input[type="date"], 
+input[type="color"], input[type="datetime"], input[type="datetime-local"], input[type="month"], 
+input[type="number"], input[type="time"], input[type="week"] {
+	font-size: 1em;
+	line-height: 2; /* IE 7+8 */
+	height: 2.1428571em; /* 30px */
+	background-color: #fff;
+	border: 1px solid #ddd;	
+	border-radius: 2px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-transition: border 200ms ease-in;
+	-moz-transition: border 200ms ease-in;
+	-ms-transition: border 200ms ease-in;
+	-o-transition: border 200ms ease-in;
+	transition: border 200ms ease-in;
+	box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"] {
+	text-indent: 10px;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+textarea {
+	
+}
