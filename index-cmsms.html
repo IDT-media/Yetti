@@ -1,11 +1,9 @@
 {strip}
-{process_pagedata}
 {title assign='main_title'}
 {block name='top'}
     {content assign='main_content' label='Content'}
 {/block}
-{/strip}
-<!DOCTYPE html>
+{/strip}<!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="{$lang|substr:0:-3}" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="{$lang|substr:0:-3}" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="{$lang|substr:0:-3}" dir="ltr" class="no-js lt-ie9"> <![endif]-->
@@ -22,12 +20,14 @@
 
 		<link rel="shortcut icon" href="static/icons/favicon.ico">
 		<link rel="apple-touch-icon" href="static/icons/apple-touch-icon.png">
-
-        <link rel="stylesheet" href="static/css/normalize.css">
-        <link rel="stylesheet" href="static/css/grid.css">
-        <link rel="stylesheet" href="static/css/helper.css">
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="static/css/yetti-grid-lt-ie9.css">
+        <![endif]-->
+        <link rel="stylesheet" href="static/css/globals.css">
+        <link rel="stylesheet" href="static/css/custom.css">
 
 		{cms_stylesheet}
+		{process_pagedata}
 		
         <script src="static/js/vendor/modernizr-2.6.2.min.js"></script>	
     </head>

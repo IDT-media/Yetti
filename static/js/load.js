@@ -14,6 +14,14 @@
  *
  */
 
+ /*************************************************
+ Configuration
+**************************************************/
+ 
+ var yetti_config = {
+	'path':		'static'
+};
+ 
 /*************************************************
  Prevent console failure on several browsers
 **************************************************/
@@ -61,7 +69,7 @@ Modernizr.load([
 	// Load Colorbox
 	{
 		test: Modernizr.loadcolorbox,
-		yep: ['./static/js/vendor/jquery.colorbox-min.js', './static/js/scripts/yetti-colorbox.js', './static/css/colorbox.css']	
+		yep: [yetti_config.path + '/js/vendor/jquery.colorbox-min.js', yetti_config.path + '/js/scripts/yetti-colorbox.js']	
 	},
 	// Load Cycle
 	{
@@ -70,32 +78,32 @@ Modernizr.load([
 		complete: function() {
 		
 			if (!window.jQuery.fn.cycle && Modernizr.loadcycle) {
-				Modernizr.load('./static/js/vendor/jquery.cycle2.min.js');
+				Modernizr.load(yetti_config.path + '/js/vendor/jquery.cycle2.min.js');
 			}
 		}
 	},
 	// Load Lazy Load
 	{
 		test: Modernizr.loadlazyload,
-		yep: ['./static/js/vendor/jquery.lazyload.min.js', './static/js/scripts/yetti-lazyload.js']	
+		yep: [yetti_config.path + '/js/vendor/jquery.lazyload.min.js', yetti_config.path + '/js/scripts/yetti-lazyload.js']	
 	},				
 	// Load Mega Menu
 	{
 		test: Modernizr.loadmegamenu,
-		yep: './static/js/scripts/yetti-megamenu.js'	
+		yep: yetti_config.path + '/js/scripts/yetti-megamenu.js'	
 	},
 	// Load Toggle
 	{
 		test: Modernizr.loadtoggle,
-		yep: './static/js/scripts/yetti-toggle.js'	
+		yep: yetti_config.path + '/js/scripts/yetti-toggle.js'	
 	},
 	// Load AJAX Content
 	{
 		test: Modernizr.loadajaxcontent,
-		yep: './static/js/scripts/yetti-ajax-content.js'	
+		yep: yetti_config.path + '/js/scripts/yetti-ajax-content.js'	
 	},
 	// Load Yetti common
 	{
-		load: './static/js/scripts/yetti-common.js'
+		load: yetti_config.path + '/js/scripts/yetti-common.js'
 	}
 ]);
